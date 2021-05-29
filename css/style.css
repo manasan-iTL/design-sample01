@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/*変数宣言*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1280px;
+}
+
+body main {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  border-left: 1px dashed #707070;
+  border-right: 1px dashed #707070;
+}
+
+body main section {
+  width: inherit;
+  margin-right: inherit;
+  margin-left: inherit;
+}
+
+body main section ul {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-img {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  padding-top: 0;
+  margin-left: 0;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-img .tab {
+  position: absolute;
+  width: 74%;
+  height: 4.8%;
+  top: 40px;
+  left: 160px;
+  border: 1px dashed #FFFFFF;
+  padding-left: 0;
+  padding-top: 19px;
+  padding-bottom: 9px;
+  /*margin:  0px 160px 30px 160px;*/
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+.header-img p {
+  position: absolute;
+  width: 258px;
+  height: 120px;
+  top: 240px;
+  left: 511px;
+  line-height: 0.5em;
+  color: #FFFFFF;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.header-img p br {
+  display: block;
+  content: "";
+  margin: 0;
+}
+
+.header-img p span {
+  width: 145px;
+  height: 16px;
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+}
+
+.concept {
+  position: relative;
+  text-align: center;
+}
+
+.concept h1 {
+  margin-top: 90px;
+  margin-bottom: 28.5px;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.concept .line {
+  display: inline-block;
+  width: 5%;
+  margin-top: 0;
+  border-bottom: #333333 1px solid;
+}
+
+.concept p {
+  color: #333333;
+  margin-top: 28.5px;
+  margin-bottom: 40px;
+}
+
+.concept div {
+  margin-top: 38px;
+}
+
+.list {
+  width: inherit;
+  border: dashed 1px #707070;
+}
+
+.list .clearfix li {
+  float: left;
+}
+
+.list .clearfix li:nth-child(n + 2) {
+  margin-top: 120px;
+}
+
+.list .clearfix li:nth-child(odd) {
+  margin-right: 120px;
+}
+
+.list .clearfix li:nth-child(1) {
+  margin-bottom: 120px;
+}
+
+.list .clearfix li:nth-child(3) {
+  margin-top: -245px;
+}
+
+.list .clearfix li:nth-child(4) {
+  margin-bottom: 100px;
+}
+
+.list .clearfix li p {
+  width: 420px;
+  height: 84px;
+  font-size: 16px;
+}
+
+.flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex2 p {
+  width: 300px;
+  height: 108px;
+}
+
+.infshop {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.infshop .picture {
+  width: 480px;
+  height: 320px;
+}
+
+.infshop .picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.infshop .list_info {
+  padding: 32px 40px 32px 40px;
+  border: 1px dashed #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.infshop .list_info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 16px;
+}
+
+.infshop .list_info li h3 {
+  width: 84px;
+  height: 16px;
+  font-weight: normal;
+}
+
+.infshop .list_info li p, .infshop .list_info li address {
+  padding: 0 0 8px 10px;
+  border-left: 1px solid #707070;
+  margin-left: 10px;
+}
+
+footer {
+  max-width: 1280px;
+  width: inherit;
+  margin-top: 120px;
+}
+
+footer .footerpng {
+  width: inherit;
+  background-image: url(../images/contact_us.png);
+  background-size: cover;
+}
+
+footer .contact {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+footer .contact .line {
+  display: inline-block;
+  width: 5%;
+  margin-top: 0;
+  border-bottom: #333333 1px solid;
+}
+
+footer .contact h1 {
+  padding-top: 80px;
+  margin-bottom: 15.5px;
+}
+
+footer .contact p {
+  margin-top: 28.5px;
+  margin-bottom: 40px;
+}
+
+footer .contact .contactbtn {
+  width: 360px;
+  height: 80px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+footer #copyright {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,283 @@
+/*変数宣言*/
+
+$default-color : #FFFFFF;
+$content-color : #333333;
+$border-color : #707070;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1280px;
+
+    main {
+        width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+
+        border-left: 1px dashed $border-color;
+        border-right: 1px dashed $border-color;
+
+        section {
+            width: inherit;
+            margin-right: inherit;
+            margin-left: inherit;
+
+            ul {
+                list-style: none;
+            }
+        }
+        
+    }
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+
+.header-img {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    padding-top: 0;
+    margin-left: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tab {
+        position: absolute;
+        width: 74%;
+        height: 4.8%;
+        top: 40px;
+        left: 160px;
+        border: 1px dashed #FFFFFF;
+        padding-left: 0;
+        padding-top: 19px;
+        padding-bottom: 9px;
+        /*margin:  0px 160px 30px 160px;*/
+
+        color:$default-color;
+        font-size: 1.5rem;
+    }
+
+    p {
+        position:absolute;
+        width: 258px;
+        height: 120px;
+        top:240px;
+        left: 511px;
+        line-height: 0.5em;
+
+        color: $default-color;
+        font-size: 5rem;
+        text-align: center;
+
+        br {
+            display: block;
+            content: "";
+            margin: 0 ;
+        }
+
+        span  {
+            width: 145px;
+            height: 16px;
+            margin: 0;
+            color: $default-color;
+            font-size: 0.8rem;
+            
+        }
+    } 
+}
+
+.concept {
+    //width: inherit;
+    position:relative;
+    text-align: center;
+
+   h1 {
+       margin-top: 90px;
+       margin-bottom: 28.5px;
+
+       font-weight: bold;
+       font-size: 36px;
+   }
+
+    .line {
+        display: inline-block;
+        width:5%;
+        margin-top: 0;
+        border-bottom: $content-color 1px solid;
+    }
+    
+    p {
+        //text-align: center;
+        color: $content-color;
+        margin-top: 28.5px;
+        margin-bottom: 40px;
+    }
+
+    div {
+        margin-top: 38px;
+    }
+}
+
+//リスト　フレックス
+.list {
+
+    width: inherit;
+    border: dashed 1px $border-color;
+
+    .clearfix {
+
+        li {
+            float: left;
+            
+            &:nth-child(n + 2){
+                margin-top: 120px;
+            }
+
+            &:nth-child(odd){
+                margin-right: 120px;
+            }
+
+            &:nth-child(1){
+                margin-bottom: 120px;
+            }
+
+            &:nth-child(3){
+                margin-top: -245px;
+            }
+
+            &:nth-child(4) {
+
+                margin-bottom: 100px;
+            }
+
+            p {
+                width: 420px;
+                height: 84px;
+
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+//リスト　フレックス２
+
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        width: 300px;
+        height: 108px;
+    }
+}
+
+//ショップ情報のスタイル
+
+.infshop {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    .picture {
+        width: 480px;
+        height: 320px;
+       
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .list_info {
+        
+        padding: 32px 40px 32px 40px;
+        border: 1px dashed $border-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            font-size: 16px;
+
+                h3 {
+                    width: 84px;
+                    height: 16px;
+                    font-weight: normal;
+                }
+
+                p,address {
+                    padding: 0 0 8px 10px;
+                    border-left: 1px solid $border-color;
+                    margin-left: 10px;
+                }
+        }
+    }
+}
+
+
+footer {
+    max-width: 1280px;
+    width: inherit;
+    margin-top: 120px;
+
+    .footerpng {
+        width: inherit;
+        background-image: url(../images/contact_us.png);
+        background-size: cover;
+    }
+
+    .contact {
+        width:960px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+
+        .line {
+            display: inline-block;
+            width:5%;
+            margin-top: 0;
+            border-bottom: $content-color 1px solid;
+        }
+
+        h1 {
+            padding-top: 80px; 
+            margin-bottom: 15.5px;
+        }
+
+        p {
+            margin-top: 28.5px;
+            margin-bottom: 40px;
+        }
+
+        .contactbtn {
+            width:360px;
+            height: 80px;
+            margin-bottom: 100px;
+            position: relative;
+        }
+
+        
+    }
+
+    #copyright {
+        text-align: center;
+    }
+}
